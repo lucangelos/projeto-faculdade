@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuperar Senha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-recuperar">
+  <h1>Recuperar Senha</h1>
+
+  <section class="cartao-recuperar">
+    <a class="voltar" href="login.html" aria-label="Voltar para o login">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 12H4M10 6l-6 6 6 6"/>
+      </svg>
+    </a>
+
+    <form class="form-recuperar" action="#" method="post">
+      <label for="nova-senha">Nova Senha</label>
+      <input type="password" id="nova-senha" name="novaSenha" required minlength="6">
+
+      <label for="confirmar-senha">Confirmar Nova Senha</label>
+      <input type="password" id="confirmar-senha" name="confirmarSenha" required minlength="6">
+
+      <p class="erro"></p>
+      <button type="submit" class="btn-escuro">Salvar</button>
+    </form>
+  </section>
+</body>
+</html>

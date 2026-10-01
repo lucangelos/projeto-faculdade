@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-login">
+  <main class="cartao-login">
+    <section class="lado-form">
+      <h1>Entrar</h1>
+      <div class="redes">
+        <button type="button" aria-label="Entrar com Facebook">f</button>
+        <button type="button" aria-label="Entrar com Google">G</button>
+        <button type="button" aria-label="Entrar com Twitter">t</button>
+      </div>
+      <p class="ou">ou entrar com seu email</p>
+
+      <form id="form-login" novalidate style="width:100%">
+        <input type="email" id="email" placeholder="Email" autocomplete="email">
+        <input type="password" id="senha" placeholder="Senha" autocomplete="current-password">
+        <p class="erro" id="erro-login" role="alert"></p>
+        <a href="alterar-senha.html" class="link-esqueceu">Esqueceu a senha?</a>
+        <button type="submit" class="btn-escuro">ENTRAR</button>
+      </form>
+    </section>
+
+    <aside class="lado-boas-vindas">
+      <h2>Olá, Usuário(a)</h2>
+      <p>Caso ainda não tenha sua conta criada, crie uma agora e aproveite nossos benefícios</p>
+      <button type="button" class="btn-escuro">Criar nova Conta</button>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
